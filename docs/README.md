@@ -7,6 +7,7 @@
 
 | 제목                 | 링크                                            |
 | -------------------- | ----------------------------------------------- |
+| 02 정규화            | [바로가기](./02-normalization/README.md)        |
 | 03 사용자 및 권한    | [바로가기](./03-user-and-permission/README.md)  |
 | 04 아키텍처          | [바로가기](./04-architecture/README.md)         |
 | 05 트랜잭션과 잠금   | [바로가기](./05-transaction-and-lock/README.md) |
