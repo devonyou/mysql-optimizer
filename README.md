@@ -1,9 +1,4 @@
-# 📚 Real MySQL
-
--   [도서](https://product.kyobobook.co.kr/detail/S000060313997)
--   [GitHub](https://github.com/wikibook/realmysql80)
-
-## feature
+## Feature
 
 | 제목                 | 링크                                            |
 | -------------------- | ----------------------------------------------- |
@@ -29,5 +24,10 @@ docker exec -it mysql-optimizer-mysql-1 sh
 ## dump
 
 ```sh
-mysql> source ./sqls/dump.sql
+mysql> source /employees/employees-create-database.sql
 ```
+
+# 📚 Real MySQL
+
+-   [도서](https://product.kyobobook.co.kr/detail/S000060313997)
+-   [GitHub](https://github.com/wikibook/realmysql80)

@@ -1,0 +1,21 @@
+services:
+    mysql:
+        # build:
+        #     context: ./mysql
+        #     dockerfile: Dockerfile
+        image: mysql:8.0
+        platform: linux/amd64
+        ports:
+            - 3306:3306
+        volumes:
+            - ./mysql/data:/var/lib/mysql
+            - ./mysql/my.cnf:/etc/mysql/my.cnf
+            - ./employees:/employees
+        healthcheck:
+            test: ['CMD', 'mysqladmin', 'ping', '-h', 'localhost', '-u', 'root', '-ppass1234']
+            interval: 5s
+            timeout: 5s
+            retries: 10
+            start_period: 5s
+        environment:
+            MYSQL_ROOT_PASSWORD: pass1234
